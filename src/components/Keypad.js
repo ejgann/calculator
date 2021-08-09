@@ -3,7 +3,13 @@ import React, { Component } from 'react'
 class Keypad extends Component {
     render() {
 
-        let buttonValues = [
+        const button = ({ className, onClick, value }) => {
+            return (
+                <button className={className} onClick={onClick}>{value}</button>
+            );
+        };
+
+        const buttonValues = [
             ['C', '+-', '%', '/'],
             [7, 8, 9, 'X'],
             [4, 5, 6, '-'],
