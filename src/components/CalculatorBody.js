@@ -1,15 +1,17 @@
-import React from 'react'
-import Keypad from './Keypad';
-import Screen from './Screen';
+import React, { Component } from "react";
+import Keypad from "./Keypad";
+import Screen from "./Screen";
 
+class CalculatorBody extends Component {
+  render() {
+    let { result } = this.props;
 
-const CalculatorBody = () => {
     return (
-        <div className="box">
-            <Screen className="screen"/>
-            <Keypad />
-        </div>
+      <div className="result">
+        <p>{result}</p>
+      </div>
     )
+  };
 }
 
 export default CalculatorBody;

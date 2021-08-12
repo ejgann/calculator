@@ -6,6 +6,7 @@ class Screen extends Component {
 
         return (
             <div className="result">
+                <h1>Calculator</h1>
                 <p>{ result } </p>
             </div>
         )
